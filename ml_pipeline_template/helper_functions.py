@@ -27,4 +27,4 @@ def fetch_dataset():
             df = pd.read_csv(data)
     if df is not None:
         st.session_state['data'] = df
-    return df
+    return df.head(100)
